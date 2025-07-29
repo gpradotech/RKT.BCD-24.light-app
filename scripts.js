@@ -70,7 +70,7 @@ function updateLightColor() {
     if (rule.selectorText === '#lightness::-moz-range-track' || rule.selectorText === '#lightness::-webkit-slider-runnable-track') {
       rule.style.background = `linear-gradient(90deg, 
         hsl(${hueValue}, ${saturationValue}%, 0%), 
-        hsl(${hueValue}, ${saturationValue}%, ${lightnessValue}%), 
+        hsl(${hueValue}, ${saturationValue}%, 50%), 
         hsl(${hueValue}, ${saturationValue}%, 100%)
         )`;
     }
